@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+</head>
+<body>
+  <div role="application" class="balance-component">
+
+    <div role="region" class="container balance c-softred">
+      <div>
+        <p>My balance</p>
+        <h2>$921.48</h2>
+      </div>
+      <div class="logo">
+        <img src="images/logo.svg" alt="logo"/>
+      </div>
+      
+    </div>
+
+    <div role="region" class="container spending">
+      <h2>Spending - Last 7 days</h2>
+      
+      <div class="chart">
+        <!-- Will be populated by barchart.js -->
+      </div>
+
+      <hr>
+
+      <p class="c-grey">Total this Month</p>
+      <div class="totalSection">
+        
+        <div>
+          <h2>$478.33</h2>
+        </div>
+        <div>
+          <p><b>+2.4%</b></p>
+          <p class="c-grey">from last month</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/DarioRubenScanferlato">Dario Ruben Scanferlato</a>.
+  </div>
+</body>
+
+</html>
+<script src="barchart.js"></script>
+<script type="text/javascript" src="data.json"></script>

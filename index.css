@@ -1,0 +1,134 @@
+body {
+    background-color: hsl(27, 66%, 92%);
+    font-size: 18px;
+    font-family: 'DM Sans', serif;
+}
+
+p {
+    margin: 0 0 0 0;
+    font-size: 16px;
+}
+
+h2 {
+    margin: 4px 0;
+}
+
+.balance-component {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 400px;
+}
+
+.container {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 1rem auto ;
+    display: flex;
+    max-width: 400px;
+}
+
+.balance {
+    background-color: white;
+    color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spending {
+    background-color: white;
+    color: hsl(25, 47%, 15%);
+    flex-direction: column;
+}
+
+.totalSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.chart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+
+}
+
+.bar-with-legend {
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+    text-align: center;
+    font-size: small;
+    color: hsl(28, 10%, 53%);
+    justify-content: flex-end;
+}
+
+.bar {
+    background-color: hsl(10, 79%, 65%);
+    height: 100px;
+    width: 35px;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    transition: filter 0.3s ease;
+}
+
+.bar:hover {
+    filter: brightness(150%);
+}
+
+.tooltip {
+    visibility: hidden;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: -30px; /* Adjust this value to position the tooltip above the bar */
+    left: 50%; /* Position it in the center */
+    transform: translateX(-50%);
+}
+
+.bar:hover .tooltip {
+    visibility: visible;
+}
+
+.c-grey {
+    color: hsl(28, 10%, 53%);
+}
+
+.c-softred {
+    background-color:  hsl(10, 79%, 65%);
+}
+
+.c-cyan {
+    background-color: hsl(186, 34%, 60%)
+}
+
+hr {
+    border-top: 2px solid hsl(27, 66%, 92%); /* Color of the line */
+    width: 100%;
+    margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 2vh;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
